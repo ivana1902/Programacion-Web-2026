@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Profesional - Ivana</title>
+    <meta name="description" content="Portafolio profesional de Ivana - Desarrolladora Web y Diseñadora UX/UI">
+    <meta name="keywords" content="desarrollador web, diseñador UX, portafolio, frontend, backend">
+    <meta name="author" content="Ivana">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #E6D7F0 0%, #9B7BA8 100%);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+        .btn:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-3px);
+        }
+        .loading {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡Bienvenido a mi Portafolio!</h1>
+        <p>Estoy cargando mi portafolio profesional...</p>
+        <div class="loading">
+            <p>Redirigiendo...</p>
+        </div>
+        <a href="HTML/portafolio.html" class="btn">Ver Portafolio</a>
+    </div>
+
+    <script>
+        // Redirección automática después de 2 segundos
+        setTimeout(function() {
+            window.location.href = 'HTML/portafolio.html';
+        }, 2000);
+
+        // Mostrar mensaje de carga
+        setTimeout(function() {
+            document.querySelector('.loading').style.display = 'block';
+        }, 1000);
+    </script>
+</body>
+</html>
